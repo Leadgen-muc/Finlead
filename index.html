@@ -3,24 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Deine Website — Example</title>
-  <meta name="description" content="Eine schlanke, responsive One-Page Website (HTML/CSS/JS).">
+  <title>Witwenrente – Informationen & Beratung</title>
+  <meta name="description" content="Übersichtliche Informationen zur Witwen- und Witwerrente, Voraussetzungen und Beratungsangebote.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#hero">DeinLogo</a>
+      <a class="brand" href="#hero">Witwenrente</a>
       <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">
         <span class="sr-only">Navigation ein-/ausblenden</span>
         ☰
       </button>
       <nav id="mainNav" class="main-nav" aria-label="Hauptnavigation">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">Über</a></li>
-          <li><a href="#services">Leistungen</a></li>
-          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="#hero">Start</a></li>
+          <li><a href="#about">Überblick</a></li>
+          <li><a href="#services">Hilfe & Leistungen</a></li>
+          <li><a href="#contact">Beratung</a></li>
         </ul>
       </nav>
     </div>
@@ -29,60 +29,59 @@
   <main>
     <section id="hero" class="hero">
       <div class="container hero-inner">
-        <h1>Schlichte, schnelle & responsive Webseite</h1>
-        <p class="lead">Perfekt für Portfolio, kleines Business oder MVP. Einfach anpassen und veröffentlichen.</p>
+        <h1>Witwen- & Witwerrente verstehen</h1>
+        <p class="lead">Klarheit in einer schwierigen Lebenslage: Hier finden Sie Informationen, Voraussetzungen und Beratungsangebote zur Witwenrente.</p>
         <div class="hero-cta">
-          <a class="btn" href="#contact">Kontakt aufnehmen</a>
+          <a class="btn" href="#contact">Kostenlose Beratung anfragen</a>
           <a class="btn btn-outline" href="#about">Mehr erfahren</a>
         </div>
       </div>
-      <!-- simple decorative svg -->
       <svg class="hero-decor" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
         <path d="M0,100 C300,180 900,20 1200,100 L1200,200 L0,200 Z"></path>
       </svg>
     </section>
 
     <section id="about" class="container about">
-      <h2>Über uns</h2>
-      <p>Wir erstellen klare, performante Websites, die auf allen Geräten gut aussehen. Diese Vorlage ist leichtgewichtig und SEO-freundlich.</p>
+      <h2>Überblick</h2>
+      <p>Die Witwen- bzw. Witwerrente ist eine Leistung der gesetzlichen Rentenversicherung. Sie soll den Lebensunterhalt sichern, wenn der Ehepartner oder die Ehepartnerin verstirbt. Hier ein kurzer Überblick:</p>
       <div class="cards">
         <article class="card">
-          <h3>Responsive</h3>
-          <p>Automatische Anpassung für Mobilgeräte, Tablets und Desktops.</p>
+          <h3>Kleine Witwenrente</h3>
+          <p>Wird gezahlt, wenn bestimmte Voraussetzungen erfüllt sind, meist zeitlich befristet.</p>
         </article>
         <article class="card">
-          <h3>Barrierearm</h3>
-          <p>Semantische Struktur, Tastatur- und Screenreader-Freundlichkeit.</p>
+          <h3>Große Witwenrente</h3>
+          <p>Wird längerfristig gewährt, wenn Alter, Kindererziehung oder Erwerbsminderung vorliegen.</p>
         </article>
         <article class="card">
-          <h3>Schnell</h3>
-          <p>Geringe Ressourcen, keine unnötigen Bibliotheken.</p>
+          <h3>Besondere Regelungen</h3>
+          <p>Unterschiede nach Eheschließungsdatum, Einkommensanrechnung und Sonderregelungen beachten.</p>
         </article>
       </div>
     </section>
 
     <section id="services" class="container services">
-      <h2>Leistungen</h2>
+      <h2>Hilfe & Leistungen</h2>
       <ul class="services-list">
-        <li><strong>Webdesign:</strong> Layout, Branding, UX</li>
-        <li><strong>Entwicklung:</strong> HTML / CSS / JS, einfache Integrationen</li>
-        <li><strong>Deployment:</strong> GitHub Pages, Netlify, Vercel</li>
+        <li><strong>Information:</strong> Voraussetzungen und Unterschiede zwischen kleiner und großer Witwenrente</li>
+        <li><strong>Rechner:</strong> Ungefähre Höhe der möglichen Rente ermitteln</li>
+        <li><strong>Beratung:</strong> Unterstützung bei Anträgen und im Kontakt mit der Rentenversicherung</li>
       </ul>
     </section>
 
     <section id="contact" class="container contact">
-      <h2>Kontakt</h2>
-      <p>Schreib mir eine kurze Nachricht — ich melde mich zurück.</p>
+      <h2>Beratung anfragen</h2>
+      <p>Hinterlassen Sie Ihre Kontaktdaten, und wir melden uns bei Ihnen zurück.</p>
 
       <form id="contactForm" class="form" novalidate>
         <label for="name">Name</label>
-        <input id="name" name="name" type="text" required minlength="2" placeholder="Dein Name">
+        <input id="name" name="name" type="text" required minlength="2" placeholder="Ihr Name">
 
         <label for="email">E-Mail</label>
         <input id="email" name="email" type="email" required placeholder="name@beispiel.de">
 
-        <label for="message">Nachricht</label>
-        <textarea id="message" name="message" rows="6" required minlength="10" placeholder="Worum geht's?"></textarea>
+        <label for="message">Ihre Nachricht</label>
+        <textarea id="message" name="message" rows="6" required minlength="10" placeholder="Worum geht es bei Ihrer Anfrage?"></textarea>
 
         <div class="form-row">
           <button type="submit" class="btn">Absenden</button>
@@ -96,7 +95,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> DeinName — <a href="#privacy">Datenschutz</a></p>
+      <p>© <span id="year"></span> Infoportal Witwenrente — <a href="#privacy">Datenschutz</a></p>
     </div>
   </footer>
 
