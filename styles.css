@@ -143,3 +143,15 @@ body{
 
 /* decorative svg style */
 .hero-decor path{ fill:#f6fbfb }
+
+
+ 
+.calculator {
+  padding: 2rem 0;
+  background: #f0f4fa;
+  border-radius: var(--radius);
+  margin-top: 2rem;
+}
+.calculator h2 {
+  margin-top: 0;
+}
