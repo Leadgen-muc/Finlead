@@ -27,6 +27,34 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       }
     });
+    
+      // Witwenrenten-Rechner
+  const calcForm = document.getElementById('calcForm');
+  const calcResult = document.getElementById('calcResult');
+
+  if (calcForm) {
+    calcForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      calcResult.textContent = '';
+
+      const rente = parseFloat(calcForm.rente.value);
+      const art = calcForm.art.value;
+
+      if (isNaN(rente) || rente <= 0 || !art) {
+        calcResult.textContent = 'Bitte geben Sie gültige Werte ein.';
+        return;
+      }
+
+      let faktor = 0;
+      if (art === 'klein') faktor = 0.25;
+      if (art === 'gross') faktor = 0.55;
+      if (art === 'gross_alt') faktor = 0.60;
+
+      const betrag = rente * faktor;
+
+      calcResult.textContent = `Geschätzte Witwenrente: ca. ${betrag.toFixed(2)} € pro Monat (brutto).`;
+    });
+  }
   });
 
   // Simple client-side form handling (no backend)
