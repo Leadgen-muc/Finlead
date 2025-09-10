@@ -68,7 +68,30 @@
         <li><strong>Beratung:</strong> Unterstützung bei Anträgen und im Kontakt mit der Rentenversicherung</li>
       </ul>
     </section>
+<section id="calculator" class="container calculator">
+  <h2>Witwenrente berechnen (Beispiel)</h2>
+  <p>Dieser Rechner liefert eine unverbindliche Schätzung. Die tatsächliche Witwenrente berechnet die Deutsche Rentenversicherung.</p>
 
+  <form id="calcForm" class="form" novalidate>
+    <label for="rente">Monatliche Rente des Verstorbenen (€)</label>
+    <input id="rente" name="rente" type="number" min="0" step="50" required placeholder="z. B. 1500">
+
+    <label for="art">Art der Rente</label>
+    <select id="art" name="art" required>
+      <option value="">Bitte auswählen</option>
+      <option value="klein">Kleine Witwenrente (25 %)</option>
+      <option value="gross">Große Witwenrente (55 %)</option>
+      <option value="gross_alt">Große Witwenrente (60 %, alte Regelung)</option>
+    </select>
+
+    <div class="form-row">
+      <button type="submit" class="btn">Berechnen</button>
+      <button type="reset" class="btn btn-muted">Zurücksetzen</button>
+    </div>
+
+    <p id="calcResult" class="form-status" role="status" aria-live="polite"></p>
+  </form>
+</section>
     <section id="contact" class="container contact">
       <h2>Beratung anfragen</h2>
       <p>Hinterlassen Sie Ihre Kontaktdaten, und wir melden uns bei Ihnen zurück.</p>
